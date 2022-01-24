@@ -1,0 +1,9 @@
+<form action="{% url 'index' %}" method="POST" class="row">
+    {% csrf_token %}
+    <div class="col">
+    {{ form.form_task }}
+    </div>
+    <div class="col">
+    <button type="submit" class="btn btn-primary btn-sm">Добавить</button>
+    </div>
+</form>

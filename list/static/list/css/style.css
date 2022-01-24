@@ -1,0 +1,32 @@
+body {
+background-color: #FFFACD;
+}
+
+
+#main{
+box-shadow: 0 0 20px rgba(0,0,0,0.5);
+border-radius: 10px;
+margin-top: 30px;
+min-height: 500px;
+max-height: 100%;
+background-color: white;
+width: 550px;
+padding-bottom:70px
+}
+
+.task {
+padding-top: 20px;
+padding-bottom: 20px;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #C0C0C0;
+}
+
+.form {
+margin-left: 30px;
+margin-bottom: 10px;
+}
+
+#task-btn {
+margin-left: 20px;
+}

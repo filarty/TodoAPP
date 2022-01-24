@@ -1,0 +1,13 @@
+
+{% for i in data %}
+    <div class="task row">
+        <div class="col-8" style="word-wrap: break-word; {{ i.style_todo }}">
+        {{ i }}
+        </div>
+        <div class="col-sm-4" style="text-align: center; margin: auto;">
+            <button onclick="window.location.href = 'update/{{ i.id }}'" class="row-sm btn btn-success btn-sm" id="style-task-btn">Готово</button>
+            <button class="row-sm btn btn-danger btn-sm " id="task-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Удалить</button>
+        </div>
+    </div>
+    {% include 'modal.html' %}
+    {% endfor %}
